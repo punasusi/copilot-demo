@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - "main"
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/LaughingLynx:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/laughinlynx:latest
